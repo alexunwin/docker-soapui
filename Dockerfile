@@ -15,7 +15,7 @@ RUN mkdir -p /opt &&\
 
 RUN wget http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-${MYSQL_CONNECTOR_VERSION}.tar.gz -O /tmp/mysql-connector.tar.gz \
     && tar -xvzf /tmp/mysql-connector.tar.gz \
-    && cp mysql-connector-java-${MYSQL_CONNECTOR_VERSION}/mysql-connector-java-${MYSQL_CONNECTOR_VERSION}.jar /opt/SoapUI/bin/ext
+    && cp mysql-connector-java-${MYSQL_CONNECTOR_VERSION}/mysql-connector-java-${MYSQL_CONNECTOR_VERSION}-bin.jar /opt/SoapUI/bin/ext
 
 # Set working directory
 WORKDIR /opt/bin
